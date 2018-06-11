@@ -1,0 +1,23 @@
+{
+  "name": "nodemon-docker-vscode-debugg",
+  "version": "1.0.0",
+  "description": "Demo app to debugg node app running inside docker using vscode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "debug": "nodemon --inspect=0.0.0.0:9229 index.js"
+  },
+  "keywords": [
+    "docker",
+    "nodejs",
+    "nodemon",
+    "debug",
+    "vscode"
+  ],
+  "author": "WSMathias",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^1.5.0"
+  }
+}
