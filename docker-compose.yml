@@ -1,7 +1,8 @@
-version: "2"
+version: "3.7"
 services:
   node:
     build: ./
+    container_name: node_app
     image: node-docker:v1
     volumes:
       - ./app/:/usr/src/app
@@ -11,4 +12,3 @@ services:
       - 9229:9229
 volumes:
   node_modules: {}
-
