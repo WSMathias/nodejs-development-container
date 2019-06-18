@@ -2,6 +2,7 @@ version: "2"
 services:
   node:
     build: ./
+    image: node-docker:v1
     volumes:
       - ./app/:/usr/src/app
       - node_modules:/usr/src/app/node_modules
