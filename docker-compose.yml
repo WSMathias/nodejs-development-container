@@ -10,7 +10,7 @@ services:
     ports:
       - 3000:3000
       - 9229:9229
-    networks: 
+    networks:
       - node-docker
 volumes:
   node_modules: {}
