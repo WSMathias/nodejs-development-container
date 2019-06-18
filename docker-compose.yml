@@ -12,3 +12,7 @@ services:
       - 9229:9229
 volumes:
   node_modules: {}
+networks:
+  node-docker:
+    name: node-docker
+    driver: bridge
