@@ -3,7 +3,7 @@
 
 ### To start this container:
 ```sh
- $ git clone git@github.com:WSMathias/docker-for-nodejs-development.git
+ $ git git@github.com:WSMathias/docker-for-nodejs-development.git
  $ cd docker-for-nodejs-development
 ```
  Open this folder using vscode
@@ -13,6 +13,11 @@
  ```sh
  $ docker-compose build
  $ docker-compose up
+ ```
+ 
+ test
+ ```sh
+ $ curl localhost:3000
  ```
 
  Select debug icon from the left side menu
