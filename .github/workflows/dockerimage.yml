@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
-        docker login -u wsmathias9 --password ${{ secrets.TMP }}
+        docker login -u ${{ secrets.DOCKER_USER }} --password ${{ secrets.DOCKER_TOKEN }}
         tag=$(date +%s)
         docker build . --file Dockerfile --tag wsmathias9/node-dev:$tag
         docker push wsmathias9/node-dev:$tag
