@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag wsmathias9/node-dev:$(date +%s)
+      run: |
+        echo ${{ secret.TMP }} | docker login -u wsmathias9
+        tag=$(date +%s)
+        docker build . --file Dockerfile --tag wsmathias9/node-dev:$tag
+        docker push wsmathias9/node-dev:$tag
