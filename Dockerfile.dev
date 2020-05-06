@@ -1,15 +1,16 @@
-FROM node:carbon
-
+FROM node:erbium-alpine
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Bundle app source
-# COPY package.json .
-COPY ./app/package.json .
-# install mysql client
-RUN npm i -g nodemon && npm install
+RUN npm i -g nodemon
 
 EXPOSE 3000 9229
 
-# add debug script to package.json to start app in debug mode
+COPY src/package* ./
+
+RUN npm install
+
+COPY src/ ./
+
+# Add debug script to package.json to start app in debug mode
 CMD [ "npm", "run", "debug" ]
