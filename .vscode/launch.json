@@ -19,8 +19,8 @@
             "protocol": "inspector",
             "address": "127.0.0.1",
             "port": 9229,
-            "localRoot": "${workspaceRoot}/app",
-            "remoteRoot": "/usr/src/app/"
+            "localRoot": "${workspaceRoot}/src",
+            "remoteRoot": "/app"
         }
     ]
 }
