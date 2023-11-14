@@ -3,16 +3,22 @@
 
 ### To start this container:
 ```sh
- $ git git@github.com:WSMathias/docker-for-nodejs-development.git
- $ cd docker-for-nodejs-development
+ $ git git@github.com:WSMathias/nodejs-development-container.git
+ $ cd nodejs-development-container
 ```
  Open this folder using vscode
  **Place your code inside app folder.**
  Modify the package.json according your requirements
  ctrl+` to open terminal and run following commands
+ using docker & docker-compose
  ```sh
  $ docker-compose build
  $ docker-compose up
+ ```
+ or using containerd and nerdctl
+ ```sh
+ $ nerdctl compose build
+ $ nerdctl compose up
  ```
  
  test

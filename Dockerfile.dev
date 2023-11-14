@@ -1,4 +1,4 @@
-FROM node:erbium-alpine
+FROM node:iron-alpine
 # Create app directory
 WORKDIR /app
 

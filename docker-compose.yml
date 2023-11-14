@@ -19,8 +19,7 @@ volumes:
   app:
     driver: local
     driver_opts:
-      o: bind
-      type: none
+      type: bind
       device: ${PWD}/src/
 networks:
   node-docker:
